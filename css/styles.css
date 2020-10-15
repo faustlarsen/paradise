@@ -35,3 +35,36 @@ img {
   margin-top: 15px;
   margin-left: 15px;
 }
+
+.glow {
+  color: white;
+  font-size: 3vw;
+  line-height: 3vw;
+  text-shadow: 10 2 3vw white;
+}
+.glow {
+  animation: glow 5s ease infinite;
+  -moz-animation: glow 5s ease infinite;
+  -webkit-animation: glow 5s ease infinite;
+}
+@keyframes glow {
+  0.1%,
+  5% {
+  text-shadow: 0 0 1vw white, 0 0 1vw grey, 0 0 1vw aqua, 0 0 1vw white, 0 0 1vw grey, 0 0 1vw white;
+  color: white;
+  }
+  5% {
+  text-shadow: .1 .1 .1vw white, .1 .1 .1vw white, .1 .1 .1vw white, .1 .1 .1vwvw white, .1 .1 .1vw white, .1vw .1vw .1vw white;
+  color: white;
+  }
+} 
+
+h1 {
+  font-size: 45px;
+  position: absolute;
+  color: rgb(181, 250, 246);
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+} 
